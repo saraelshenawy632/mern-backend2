@@ -3,7 +3,7 @@ const cors = require("cors");
 const dataMiddleware = express.json();
 
 const corsMiddleware = cors({
-origin: "http://localhost:3000",
+origin: "*",
   credentials: true,
   methods: ["GET","POST","PATCH","DELETE","OPTIONS","PUT"]
 
